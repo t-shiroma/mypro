@@ -11,12 +11,13 @@
 ## 関係者
 | 名前・役割 | 関係 | 主なやり取り | 備考 |
 |---|---|---|---|
-| saki-nagamine | 社内(推定) | 不動産系リポジトリのコミット | 要確認 |
+| saki-nagamine | 社内(推定) | 不動産系(FudosanDB の主担当、FudosanWeb) | 要確認 |
 | k-sesoko | 社内(推定) | FudosanWebAPI のコミット | 要確認 |
+| y-maesato | 社内(推定) | 漁業案件の設計書(gyogyogyo-pj)の主な作成者 | 要確認 |
 | miyukikoga | 社内(推定) | otc-kk-kintone の作成者 | 要確認 |
 | 沖縄県漁業振興基金 | 顧客 | blue-shield / promotionFund | |
 | 鹿屋体育大学 | 顧客 | 教務システム | |
-| 不動産会社(社名未確認) | 顧客 | FudosanWeb / API / J-Rent移行 | |
+| 不動産会社(社名未確認) | 顧客 | FudosanWeb / API / DB / J-Rent移行 | チケット LIFE / NIKKEN の2系統 |
 | otc-kk(社名未確認) | 顧客 | 見積システム | |
 | 大学病院(名称未確認) | 顧客 | facility-booking | |
 | 具志堅商店 | 顧客 | WordPress サイト | |

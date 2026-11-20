@@ -1,6 +1,6 @@
 # 担当リポジトリ一覧
 
-> 最終更新: 2026-11-20(ユーザー提示の21件を調査。README・CLAUDE.md・直近40コミットから推定)
+> 最終更新: 2026-11-20(ユーザー提示の23件を調査。README・CLAUDE.md・直近40コミットから推定)
 > 「推定」はコードから読み取った内容で、ユーザー未確認。
 
 ## A. 自社プロダクト・SaaS(株式会社リュウズシステム)
@@ -22,8 +22,10 @@
 |---|---|---|---|---|
 | [FudosanWeb](https://github.com/ryussystem/FudosanWeb) | 不動産会社 | 不動産WEB連携システム。Laravel 5.5→13 / PHP 7→8.5、CentOS 7→Ubuntu 26.04 移行 | Laravel 13, MySQL, Docker | 11/19 PHP更新手順。10/27 申込転送の不具合修正 |
 | [FudosanWebAPI](https://github.com/ryussystem/FudosanWebAPI) | 不動産会社 | 不動産API(SalesForce連携、Oracle参照) | Laravel 13, Oracle | 11/19 php-update.sh |
+| [FudosanDB](https://github.com/ryussystem/FudosanDB) | 不動産会社 | 不動産システムの DB(Oracle:テーブル・PL/SQL・帳票用ビュー)。チケットは `LIFE-xxx` / `NIKKEN-xxx` | Oracle | 2026-04 以降停止。主に saki-nagamine さんが担当 |
 | [fudosan-iko-life](https://github.com/ryussystem/fudosan-iko-life) | 不動産会社 | 現行賃貸管理(FudosanSystem/DB)→ **J-Rent データ移行**。移行仕様・CSV作成・工数見積 | PHP 5.3(現行コンテナ内) | 11/16 工数見積作成 |
 | [promotionFund](https://github.com/ryussystem/promotionFund) | 沖縄県漁業振興基金 | 外国漁船操業等調査・監視事業(kintone版・**現行運用**) | kintone + React | 10/07 hotfix 対応(#452〜474) |
+| [gyogyogyo-pj](https://github.com/ryussystem/gyogyogyo-pj) | 沖縄県漁業振興基金 | 外国漁船操業等調査・監視事業の**設計書リポジトリ**(要件定義・基本設計・詳細設計・画面遷移図・現行システム解析)。blue-shield が参照元にしている | Markdown / draw.io | 2026-06 以降停止。y-maesato さんが主に作成 |
 | [blue-shield](https://github.com/ryussystem/blue-shield) | 沖縄県漁業振興基金 | promotionFund の**再構築**。利用者:基金・漁協・水産庁・沖縄県。PC専用 | React + Hono + Drizzle + PostgreSQL | 11/19 画面詳細設計書・ER図。設計書/テスト/マニュアル整備中 |
 | [DzkKnyKmWeb](https://github.com/ryussystem/DzkKnyKmWeb) | 鹿屋体育大学 | 教務システム(Web)。PHP 8 移行・本番移行(方式B) | PHP 8.5, Oracle, Windows Server | 11/18 マージ。本番移行チェックリスト |
 | [DzkKnyKmDb](https://github.com/ryussystem/DzkKnyKmDb) | 鹿屋体育大学 | 教務システムの DB(Oracle DDL・PL/SQL) | Oracle | 11/18 マージ |
@@ -44,7 +46,8 @@
 - **開発スタイル**:大半のリポジトリで Claude Code がブランチで実装し、ユーザーがレビューしてマージしている。ユーザーの役割は「設計・判断・レビュー・リリース」が中心。
 - **標準スタック**:新規は React + Hono + PostgreSQL + Caddy + Docker に統一。共通部品・UI規約は work-app が源流で、ryus-apps / otc-kk-apps に移植。
 - **レガシー刷新の流れ**:kintone → 自前Web(promotionFund→blue-shield、otc-kk-kintone→otc-kk-apps)、PHP/Laravel の大幅バージョンアップ(FudosanWeb、DzkKnyKm、会計)、OS移行(CentOS 7→Ubuntu)。
-- **関係者(コミット履歴より)**:saki-nagamine、k-sesoko(不動産系)、miyukikoga(otc-kk-kintone)。
+- **関係者(コミット履歴より)**:saki-nagamine(不動産系、FudosanDB の主担当)、k-sesoko(不動産系)、miyukikoga(otc-kk-kintone)、y-maesato(漁業の設計書)。
+- **不動産系のチケット接頭辞**:`LIFE-xxx` と `NIKKEN-xxx` の2系統。顧客が2社ある可能性(要確認)。
 
 ## ローカル clone(このセッション)
 

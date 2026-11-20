@@ -7,7 +7,8 @@ Claude が業務を把握するために確認したいこと。答えられる�
 - [ ] 案件ごとの**ご自身の役割**(PM/開発/レビューのみ など)と**優先順位**
 - [ ] 停止中の案件(secubase、tsumiki、ashibi)は保留? 終了? 再開予定?
 - [ ] 顧客名が不明な案件:不動産系の顧客、otc-kk、大学病院
-- [ ] saki-nagamine さん、k-sesoko さん、miyukikoga さんとの関係・役割分担
+- [ ] saki-nagamine さん、k-sesoko さん、miyukikoga さん、y-maesato さんとの関係・役割分担
+- [ ] 不動産系チケットの `LIFE` と `NIKKEN` はそれぞれどの顧客か
 - [ ] 一覧にない業務(営業、見積、会議、社内業務、採用・研修 など)
 
 ## A. 役割と組織
