@@ -1,6 +1,6 @@
 # ドメイン・ブランド方針(案)
 
-> 作成: 2026-11-20 / Claude の提案。ユーザー判断待ち
+> 作成: 2026-11-20 / **決定(2026-11-20):自社製品は ryus-apps.jp にまとめる**(下の「追加検討」の案。条件1〜5を満たすこと)
 
 ## 前提(調査結果)
 - **ryus-apps.jp**:RYU'S Apps は、ログイン共有のため **親ドメインの Cookie(`Domain=.ryus-apps.jp`、`ryus_session`)** を使っている(`ryus-apps/docs/design.md`、`packages/http/src/config.ts`)。
