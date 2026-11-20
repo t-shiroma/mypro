@@ -8,6 +8,7 @@
 | **2026-11-30** | blue-shield(漁業振興基金) | **納品** | 準備中(納品範囲の確認待ち) | `projects/blue-shield.md` |
 | 2026-12〜2027-01 | 宿泊税 SaaS | 本番環境・課金・規約の確定、初期顧客の登録 | 未着手? | `projects/okinawa-stay-manager.md` |
 | 未定(近日) | facility-booking | 見積の確定・契約 | 最終段階 | `projects/facility-booking.md` |
+| **2026-12-01** | RYU'S Apps 勤怠 | リリース(develop→main、ryus-apps#35) | PR 作成済み | `projects/ryus-apps.md` |
 | **2027-02-01** | 宿泊税 SaaS | **宿泊税施行=稼働** | 開発中 | |
 | **2027-02 末** | facility-booking(大学病院) | **最終納品** | 見積中 | |
 | 2027-03 末(見込み) | 宿泊税 SaaS | 利用者の初回申告(2月分) | — | |

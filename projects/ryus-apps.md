@@ -40,3 +40,6 @@
 - [ ] 公開(販売開始)の目標時期
 - [ ] フェーズ1 完了条件の達成状況
 - [x] tsumiki との関係 → 現在は別(変形労働時間制のため)。まとめられるなら ryus-apps に取り込みたい(`projects/tsumiki.md`)
+
+## リリース
+- **2026-12-01 リリース予定**(ユーザー確認 11/20)。develop→main の PR:[ryus-apps#35](https://github.com/ryussystem/ryus-apps/pull/35)(#31〜#34。マイグレーション2件、全員再ログイン、merge commit でマージ)。
