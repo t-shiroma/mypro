@@ -2,7 +2,7 @@
 
 | 依頼日 | セッション | リポジトリ | 内容 | 状態 |
 |---|---|---|---|---|
-| 2026-11-20 | session_01GybB6zdQTAUHdARqTAYuJE | ryus-apps | 変形労働時間制に対応する勤怠集計の設計(tsumiki 統合)。設計のみ、PR は develop 向け | **完了**:[ryus-apps#31](https://github.com/ryussystem/ryus-apps/pull/31)。tsumiki は権限不足で未読 → 要突き合わせ。ユーザーのレビュー待ち |
+| 2026-11-20 | session_01GybB6zdQTAUHdARqTAYuJE | ryus-apps | 変形労働時間制に対応する勤怠集計の設計(tsumiki 統合)。設計のみ、PR は develop 向け | **完了**:[ryus-apps#31](https://github.com/ryussystem/ryus-apps/pull/31)。PM セッションで tsumiki と突き合わせ → 修正を追加依頼済み(2026-11-20)。修正後にユーザーのレビュー |
 | 2026-11-20 | session_01GybB6yr2wQMja6AxT8rYKP | ashibi | お試し環境の準備(同居のための Cookie・CSRF 対策、KAGOYA 配置手順、Resend、自動バックアップ、規約の下書き、一括登録、利用案内) | 作業中(2026-11-20 時点) |
 | 2026-11-20 | session_01GybB71qahbVKUroHchPPAM | ryus-apps | ログイン共有を親ドメイン Cookie から中央ログイン + アプリ専用 Cookie へ変更。PR は develop 向け | **完了**:[ryus-apps#32](https://github.com/ryussystem/ryus-apps/pull/32)。判断待ち:クライアントの秘密(今は PKCE のみ)、他製品の登録方法。ユーザーのレビュー待ち |
 
