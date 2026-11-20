@@ -1,0 +1,184 @@
+<meta name="dash-one-writer">
+<style>
+  .tb { display: flex; flex-direction: column; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .tb-lead { font-size: var(--cds-font-size-heading); line-height: 1.6; margin: 0; max-width: 60ch; }
+  .tb-lead b { font-family: var(--font-anthropic-serif); font-weight: 400; font-variant-numeric: tabular-nums; }
+  .tb-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-xs) 0 0; }
+  .tb-controls { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: center; }
+  .tb-controls label { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-body); }
+  .tb h2 { font-size: var(--cds-font-size-title); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-sm); }
+  .tb-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-md); }
+  .tb-wrap { overflow-x: auto; }
+  .tb table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); }
+  .tb th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .tb td { padding: var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .tb td.due { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .tb td.note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .tb-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr)); gap: var(--cds-gap-lg); }
+  .tb-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+  .tb-card h3 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+  .tb-count { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+  .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption); white-space: nowrap; border: 1px solid currentColor; }
+  .pill[data-s="完了"] { color: var(--color-ok); }
+  .pill[data-s="回答待ち"], .pill[data-s="判断待ち"], .pill[data-s="確認待ち"] { color: var(--color-warn); }
+  .pill[data-s="進行中"] { color: var(--color-fg); }
+  .pill[data-s="未着手"] { color: var(--color-fg-muted); }
+  .late { color: var(--color-bad); font-weight: var(--cds-font-weight-medium); }
+  .soon-mark { color: var(--color-warn); }
+  .tb-empty { color: var(--color-fg-muted); margin: 0; }
+  .tb-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+</style>
+
+<div class="tb">
+  <header id="summary">
+    <p class="tb-lead" data-read lang="ja">未完了のタスクは <b data-draw="open" data-source="summary" data-field="open" data-row="0">—</b> 件。うち2週間以内が期限のものが <b data-draw="soon-n" data-source="summary" data-field="soon" data-row="0">—</b> 件、回答・判断・確認を待っているものが <b data-draw="wait-n" data-source="summary" data-field="waiting" data-row="0">—</b> 件です。</p>
+    <p class="tb-sub" data-read lang="ja">PMのナレッジベース(mypro の tasks・sessions・milestones)から作成したタスク表です。状況が変わったら Claude が更新します。</p>
+  </header>
+
+  <div class="tb-controls" id="filters">
+    <label for="tb-owner">担当
+      <select id="tb-owner" class="dash-select" aria-label="担当で絞り込む">
+        <option value="">すべて</option>
+        <option value="自分">自分</option>
+        <option value="Claude">Claude</option>
+        <option value="外部">顧客・J-Rent</option>
+      </select>
+    </label>
+    <label for="tb-done"><input type="checkbox" id="tb-done"> 完了も表示</label>
+    <span class="tb-legend"><span class="pill" data-s="進行中">進行中</span><span class="pill" data-s="回答待ち">回答・判断・確認待ち</span><span class="pill" data-s="未着手">未着手</span><span class="pill" data-s="完了">完了</span></span>
+  </div>
+
+  <section id="due-soon">
+    <h2>期限が近いもの</h2>
+    <p class="tb-note">未完了で、期限が今日から14日以内か、すでに過ぎているもの。</p>
+    <div data-draw="soon" class="tb-wrap" data-source="tasks">—</div>
+  </section>
+
+  <section id="projects">
+    <h2>プロジェクト別</h2>
+    <div data-draw="board" class="tb-cards" data-source="tasks">—</div>
+  </section>
+</div>
+
+<script>
+  window.tbState = window.tbState || { owner: '', showDone: false };
+
+  window.tbToday = function () {
+    const d = new Date(Date.now() + 9 * 3600 * 1000);
+    return d.toISOString().slice(0, 10);
+  };
+  window.tbDays = function (due) {
+    if (!due) return null;
+    const a = Date.parse(due + 'T00:00:00Z'), b = Date.parse(window.tbToday() + 'T00:00:00Z');
+    if (isNaN(a)) return null;
+    return Math.round((a - b) / 86400000);
+  };
+
+  dash.calc('summary', {
+    title: '未完了・期限間近・待ちの件数',
+    description: '完了以外を未完了、期限が今日(日本時間)から14日以内または超過を期限間近、回答待ち・判断待ち・確認待ちを待ちとして数える',
+    inputs: ['tasks'],
+    fn: (tasks) => {
+      const open = tasks.filter((t) => t.status !== '完了');
+      const soon = open.filter((t) => { const d = window.tbDays(t.due); return d !== null && d <= 14; });
+      const waiting = open.filter((t) => ['回答待ち', '判断待ち', '確認待ち'].includes(t.status));
+      return [{ open: open.length, soon: soon.length, waiting: waiting.length }];
+    }
+  });
+
+  ['open', 'soon-n', 'wait-n'].forEach((name) => {
+    const field = { 'open': 'open', 'soon-n': 'soon', 'wait-n': 'waiting' }[name];
+    dash.draw(name, (el) => {
+      const s = dash.data('summary');
+      el.textContent = s.status === 'ok' && s.data && s.data[0] ? String(s.data[0][field]) : '—';
+    });
+  });
+
+  window.tbFilter = function (rows) {
+    const st = window.tbState;
+    return rows.filter((t) => {
+      if (!st.showDone && t.status === '完了') return false;
+      if (st.owner === '外部') return t.owner === '顧客' || t.owner === 'J-Rent';
+      if (st.owner) return t.owner === st.owner;
+      return true;
+    });
+  };
+
+  window.tbDue = function (td, due) {
+    const d = window.tbDays(due);
+    td.className = 'due';
+    if (!due) { td.textContent = '—'; return; }
+    td.textContent = due.slice(5).replace('-', '/') + (due.slice(0, 4) !== window.tbToday().slice(0, 4) ? ' (' + due.slice(0, 4) + ')' : '');
+    if (d !== null && d < 0) { td.classList.add('late'); td.title = d * -1 + '日超過'; }
+    else if (d !== null && d <= 3) td.classList.add('soon-mark');
+  };
+
+  window.tbTable = function (rows, withProject) {
+    const wrap = document.createElement('div');
+    wrap.className = 'tb-wrap';
+    const table = document.createElement('table');
+    table.setAttribute('data-source', 'tasks');
+    table.setAttribute('data-row-key', 'id');
+    const cols = withProject
+      ? [['project', 'プロジェクト'], ['task', 'タスク'], ['status', '状態'], ['owner', '担当'], ['due', '期限']]
+      : [['task', 'タスク'], ['status', '状態'], ['owner', '担当'], ['due', '期限'], ['note', 'メモ']];
+    const thead = table.createTHead().insertRow();
+    cols.forEach(([f, label]) => { const th = document.createElement('th'); th.setAttribute('data-field', f); th.textContent = label; thead.appendChild(th); });
+    const tb = table.createTBody();
+    rows.forEach((t) => {
+      const tr = tb.insertRow();
+      tr.setAttribute('data-key', encodeURIComponent(t.id));
+      cols.forEach(([f]) => {
+        const td = tr.insertCell();
+        if (f === 'status') { const p = document.createElement('span'); p.className = 'pill'; p.setAttribute('data-s', t.status); p.textContent = t.status; td.appendChild(p); }
+        else if (f === 'due') window.tbDue(td, t.due);
+        else { td.textContent = t[f] || (f === 'note' ? '' : '—'); if (f === 'note') td.className = 'note'; }
+      });
+    });
+    wrap.appendChild(table);
+    return wrap;
+  };
+
+  dash.draw('soon', (el) => {
+    const r = dash.data('tasks');
+    if (r.status !== 'ok') { el.textContent = r.status === 'error' ? 'タスク表を読み込めませんでした。' : '—'; return; }
+    const rows = window.tbFilter(r.data).filter((t) => t.status !== '完了' && (() => { const d = window.tbDays(t.due); return d !== null && d <= 14; })())
+      .sort((a, b) => (a.due || '').localeCompare(b.due || ''));
+    el.replaceChildren();
+    if (!rows.length) { const p = document.createElement('p'); p.className = 'tb-empty'; p.textContent = 'この条件で期限が近いタスクはありません。'; el.appendChild(p); return; }
+    el.appendChild(window.tbTable(rows, true));
+  });
+
+  dash.draw('board', (el) => {
+    const r = dash.data('tasks');
+    if (r.status !== 'ok') { el.textContent = r.status === 'error' ? 'タスク表を読み込めませんでした。' : '—'; return; }
+    const all = r.data;
+    const order = [];
+    all.forEach((t) => { if (!order.includes(t.project)) order.push(t.project); });
+    el.replaceChildren();
+    let shown = 0;
+    order.forEach((proj) => {
+      const rows = window.tbFilter(all.filter((t) => t.project === proj));
+      if (!rows.length) return;
+      shown++;
+      const projAll = all.filter((t) => t.project === proj);
+      const card = document.createElement('article');
+      card.className = 'tb-card';
+      const h = document.createElement('h3'); h.textContent = proj; card.appendChild(h);
+      const c = document.createElement('p'); c.className = 'tb-count';
+      const open = projAll.filter((t) => t.status !== '完了').length;
+      c.textContent = '未完了 ' + open + ' 件 / 全 ' + projAll.length + ' 件';
+      card.appendChild(c);
+      card.appendChild(window.tbTable(rows, false));
+      el.appendChild(card);
+    });
+    if (!shown) { const p = document.createElement('p'); p.className = 'tb-empty'; p.textContent = 'この条件に当てはまるタスクはありません。'; el.appendChild(p); }
+  });
+
+  document.querySelectorAll('#tb-owner').forEach((sel) => {
+    sel.addEventListener('change', () => { window.tbState.owner = sel.value; dash.draw('soon'); dash.draw('board'); });
+  });
+  document.querySelectorAll('#tb-done').forEach((cb) => {
+    cb.addEventListener('change', () => { window.tbState.showDone = cb.checked; dash.draw('soon'); dash.draw('board'); });
+  });
+</script>
