@@ -6,6 +6,7 @@
 | 2026-11-20 | session_01GybB6yr2wQMja6AxT8rYKP | ashibi | お試し環境の準備(同居のための Cookie・CSRF 対策、KAGOYA 配置手順、Resend、自動バックアップ、規約の下書き、一括登録、利用案内) | 作業中(2026-11-20 時点) |
 | 2026-11-20 | session_01GybB71qahbVKUroHchPPAM | ryus-apps | ログイン共有を親ドメイン Cookie から中央ログイン + アプリ専用 Cookie へ変更。PR は develop 向け | **完了**:[ryus-apps#32](https://github.com/ryussystem/ryus-apps/pull/32)。**マージ済み(2026-11-20)**。開発サーバーへ自動反映 → 開発サーバーの利用者は再ログインが必要 |
 | 2026-11-20 | session_01GybB731bFMr3th85EWGtT7 | ryus-apps | 通常の労働時間制の時間外判定の修正(A-1)+ 端数処理③の決定を文書に反映。PR は develop 向け | 作業中 |
+| 2026-11-20 | session_01GybB6zYzYNVsf2ZnBGmufU | blue-shield | 納品前の仕上げ:A. R-2 修正・R-4 負荷試験・R-5 本番構成確認 / B. 全テスト再実施・報告書更新・納品物一覧 | 作業中 |
 
 ## 運用ルール
 - 依頼したセッションの成果物は PR。**マージは必ずユーザーが行う**(各リポジトリの規約で Claude はマージしない)。
