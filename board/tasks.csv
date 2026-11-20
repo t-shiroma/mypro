@@ -42,3 +42,5 @@ WA-01,WorkApp(社内),社内アプリの運用・継続開発,進行中,自分,,
 RA-04,RYU'S Apps 勤怠,PR #35(develop→main)を確認しマージ(merge commit で),完了,自分,2026-11-30,main に merge commit でマージ済み(7f86bc1)
 RA-05,RYU'S Apps 勤怠,リリース,未着手,自分,2026-12-01,
 RA-06,RYU'S Apps 勤怠,① 月単位のシフト作成の実装(PR-A〜E、develop 向け),進行中,Claude,,26〜34人日。変形労働時間制(②③)の前段
+AS-05,ashibi(公共施設予約),分析機能の追加(稼働率・個人/団体別・ヒートマップ・抽選倍率など),進行中,Claude,,session_01GybB716uvJAYtYjJc1GgBS
+FB-04,施設予約(大学病院),分析機能の追加(利用者区分別・設備別・承認時間など)と見積への工数反映,進行中,Claude,,受託のため見積に反映が必要
