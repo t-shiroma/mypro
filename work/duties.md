@@ -12,7 +12,7 @@
 | P3 | 鹿屋体育大学 教務システム(提供中)のセキュリティ対応 | DzkKnyKmWeb / DzkKnyKmDb | 保守 | 改修・手順書は完了、**本番移行が未実施** | 未確認 | 現行 PHP 5.2.17。`projects/kanoya.md` |
 | P4 | 不動産システム(5社に提供)の保守・サーバー移行 | FudosanWeb / FudosanWebAPI / FudosanDB | 受託・保守 | 移行・運用 | 未確認 | CentOS 7→Ubuntu 26.04 |
 | P5 | ライフコーポレーションの J-Rent データ移行 | fudosan-iko-life | 受託 | 仕様・見積 | 未確認 | 工数見積作成済(11/16) |
-| P6 | 見積システム刷新 | otc-kk-apps | 受託 | 開発サーバー運用 | 未確認 | develop→main 運用 |
+| P6 | otc-kk 見積システム:kintone 版を運用中、スクラッチ版を提案 | otc-kk-kintone / otc-kk-apps | 保守 + 提案 | 提案用に開発中(開発サーバーでデモ可) | 未確認 | `projects/otc-kk.md` |
 | P7 | 大学病院 施設予約 | facility-booking | 受託 | **見積の最終段階** | **2027-02 末 最終納品** | `projects/facility-booking.md` |
 | P8 | 店舗管理システム | new-accounting-system | 受託・保守 | バージョンアップ | 未確認 | |
 | P9 | 具志堅商店 WordPress | gushiken-shoten.co.jp | 保守 | Git管理を導入済 | — | 週次ミラー |
