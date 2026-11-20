@@ -19,4 +19,4 @@
 | T-013 | ashibi:お試し環境の準備 | P12 | 高 | — | 進行中 | 別セッション session_01GybB6yr2wQMja6AxT8rYKP |
 | T-014 | ashibi:人がやる作業(KAGOYA 契約、DNS、Resend 登録)、先方へ施設データの依頼 | P12 | 高 | — | 待ち | T-013 の報告後 |
 | T-015 | ryus-apps:ログイン方式の変更(ryus-apps.jp への製品同居の前提) | P10 | 中 | ryus-apps 公開前 | 完了(#32 マージ 2026-11-20) | 別セッション session_01GybB71qahbVKUroHchPPAM |
-| T-016 | ryus-apps:通常の労働時間制の時間外判定の修正(A-1)、端数処理③を文書に反映 | P10 | 高(公開前) | ryus-apps 公開前 | 進行中 | 別セッション session_01GybB731bFMr3th85EWGtT7 |
+| T-016 | ryus-apps:通常の労働時間制の時間外判定の修正(A-1)、端数処理③を文書に反映 | P10 | 高(公開前) | ryus-apps 公開前 | 完了(#34 マージ 2026-11-20) | |
