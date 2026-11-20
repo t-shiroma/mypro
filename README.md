@@ -10,6 +10,7 @@
 | `work/duties.md` | 業務一覧(定常業務・プロジェクト業務の棚卸し) |
 | `work/repositories.md` | 担当リポジトリ一覧(概要・技術・状況) |
 | `work/hearing.md` | Claude からのヒアリング項目(未確認事項) |
+| `work/domain-strategy.md` | ドメイン・ブランド方針(案) |
 | `work/milestones.md` | 全案件のマイルストーン・期限 |
 | `tasks/tasks.md` | 進行中・予定のタスク(優先度・期限・状態) |
 | `projects/<案件>.md` | 案件ごとの管理(納期・現状評価・リスク・計画) |
