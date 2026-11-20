@@ -14,5 +14,9 @@
 - 不明点は推測で埋めず「未確認」と書き、ヒアリング項目として `work/hearing.md` に積む。
 - PMとして、期限・優先度・リスクを意識し、次の一手を提案する。
 
+## タスク状況のダッシュボード
+- https://claude.ai/artifact/SkKfD6NQxf8JYeFpoSMNqy (Data タイプ)。元データは `board/tasks.csv`。
+- タスクの状態が変わったら `board/tasks.csv` を直し、アップロード(asset)→ `datasets/tasks` の source.url と updated を更新する。
+
 ## 変更の保存
 - 更新したら開発ブランチにコミットし、push する(コンテナは消えるため)。
