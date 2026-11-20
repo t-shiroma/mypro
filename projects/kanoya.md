@@ -72,5 +72,5 @@ Windows Server 2019 / Apache 2.4 + **mod_php(php8apache2_4.dll、Thread Safe 版
 2. **本対策:PHP 8.5.13 へ更新**(手順は `DzkKnyKmWeb/docs/WINDOWS_WEBSERVER.md` §8.2。ジャンクションの切替なので数分の停止・切り戻し容易。oci8 の DLL はそのまま使える)
    - 注意:手順書 §8.2 のサービス名は `Apache2.4` だが、本番(方式 B)のサービス名は **`DzkKnyKmApache`**。
    - 検証用サーバーで先に 8.5.13 を確認 → 本番は利用者の少ない時間帯に実施。
-3. 大学向けの報告・提案書:https://claude.ai/artifact/GKpyFeAbAqzXC8Ah8k32nY(2026-11-20 作成)
+3. 大学向けの報告・提案書:https://claude.ai/artifact/GKpyFeAbAqzXC8Ah8k32nY(2026-11-20 作成・**送付済み**。実施可否と日程の回答待ち)
 4. 暫定対策の php.ini 変更は、8.5.13 適用後も残す(リポジトリの `docs/windows/prod/php.ini` にも反映する)。
