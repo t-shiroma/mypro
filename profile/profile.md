@@ -16,7 +16,7 @@
 | y-maesato | 社内(推定) | 漁業案件の設計書(gyogyogyo-pj)の主な作成者 | 要確認 |
 | miyukikoga | 社内(推定) | otc-kk-kintone の作成者 | 要確認 |
 | 沖縄県漁業振興基金 | 顧客 | blue-shield / promotionFund | |
-| 鹿屋体育大学 | 顧客 | 教務システム | |
+| 鹿屋体育大学 | 顧客 | 教務システム(Web・DB)を提供中 | `projects/kanoya.md` |
 | ライフコーポレーション | 顧客 | 不動産システム一式、FudosanWeb、J-Rent 移行 | 主要顧客。`projects/fudosan.md` |
 | 日研住宅 | 顧客 | 不動産システム | |
 | とみや不動産 | 顧客 | 不動産システム | |
