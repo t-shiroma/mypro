@@ -10,8 +10,8 @@
 | P1 | 沖縄宿泊税 管理SaaS | okinawa-stay-manager-v2 | 自社SaaS | 開発終盤(課金・印刷) | **2027-02-01 宿泊税施行** | 本人が直接実装 |
 | P2 | 漁業振興基金 システム再構築 | blue-shield(旧: promotionFund、設計書: gyogyogyo-pj) | 受託 | 納品前の仕上げ | **2026-11 末 納品** | フルスクラッチ再構築。詳細は `projects/blue-shield.md` |
 | P3 | 鹿屋体育大学 教務システム PHP8・本番移行 | DzkKnyKmWeb / DzkKnyKmDb | 受託・保守 | 本番移行準備 | 未確認 | Windows Server、Oracle 12.1 |
-| P4 | 不動産 WEB連携・API 更新/サーバー移行 | FudosanWeb / FudosanWebAPI / FudosanDB | 受託・保守 | 移行・運用 | 未確認 | CentOS 7→Ubuntu 26.04 |
-| P5 | 不動産 J-Rent データ移行 | fudosan-iko-life | 受託 | 仕様・見積 | 未確認 | 工数見積作成済(11/16) |
+| P4 | 不動産システム(5社に提供)の保守・サーバー移行 | FudosanWeb / FudosanWebAPI / FudosanDB | 受託・保守 | 移行・運用 | 未確認 | CentOS 7→Ubuntu 26.04 |
+| P5 | ライフコーポレーションの J-Rent データ移行 | fudosan-iko-life | 受託 | 仕様・見積 | 未確認 | 工数見積作成済(11/16) |
 | P6 | 見積システム刷新 | otc-kk-apps | 受託 | 開発サーバー運用 | 未確認 | develop→main 運用 |
 | P7 | 大学病院 施設予約 | facility-booking | 受託(提案/開発) | 要件確定・実装中 | 未確認 | 工数見積の打ち合わせ資料あり |
 | P8 | 店舗管理システム | new-accounting-system | 受託・保守 | バージョンアップ | 未確認 | |

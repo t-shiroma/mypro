@@ -6,9 +6,10 @@ Claude が業務を把握するために確認したいこと。答えられる�
 - [ ] 案件ごとの**期限・納期**(特に blue-shield、DzkKnyKm 本番移行、FudosanWeb のサーバー移行、J-Rent 移行、facility-booking、otc-kk-apps)
 - [ ] 案件ごとの**ご自身の役割**(PM/開発/レビューのみ など)と**優先順位**
 - [ ] 停止中の案件(secubase、tsumiki、ashibi)は保留? 終了? 再開予定?
-- [ ] 顧客名が不明な案件:不動産系の顧客、otc-kk、大学病院
+- [x] 不動産系の顧客 → 5社(2026-11-20 回答。`projects/fudosan.md`)
+- [ ] 顧客名が不明な案件:otc-kk、大学病院
 - [ ] saki-nagamine さん、k-sesoko さん、miyukikoga さん、y-maesato さんとの関係・役割分担
-- [ ] 不動産系チケットの `LIFE` と `NIKKEN` はそれぞれどの顧客か
+- [ ] 不動産系:FudosanSystem の扱い、ライフの J-Rent 移行時期、SUN(sunsun-okinawa.com)は現顧客か(`projects/fudosan.md` の確認事項)
 - [ ] 一覧にない業務(営業、見積、会議、社内業務、採用・研修 など)
 
 ## A. 役割と組織

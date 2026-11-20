@@ -17,7 +17,11 @@
 | miyukikoga | 社内(推定) | otc-kk-kintone の作成者 | 要確認 |
 | 沖縄県漁業振興基金 | 顧客 | blue-shield / promotionFund | |
 | 鹿屋体育大学 | 顧客 | 教務システム | |
-| 不動産会社(社名未確認) | 顧客 | FudosanWeb / API / DB / J-Rent移行 | チケット LIFE / NIKKEN の2系統 |
+| ライフコーポレーション | 顧客 | 不動産システム一式、FudosanWeb、J-Rent 移行 | 主要顧客。`projects/fudosan.md` |
+| 日研住宅 | 顧客 | 不動産システム | |
+| とみや不動産 | 顧客 | 不動産システム | |
+| アシストホーム | 顧客 | 不動産システム | |
+| クリアス不動開発 | 顧客 | 不動産システム | |
 | otc-kk(社名未確認) | 顧客 | 見積システム | |
 | 大学病院(名称未確認) | 顧客 | facility-booking | |
 | 具志堅商店 | 顧客 | WordPress サイト | |
