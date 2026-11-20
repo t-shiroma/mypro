@@ -11,6 +11,7 @@
 | `work/repositories.md` | 担当リポジトリ一覧(概要・技術・状況) |
 | `work/hearing.md` | Claude からのヒアリング項目(未確認事項) |
 | `tasks/tasks.md` | 進行中・予定のタスク(優先度・期限・状態) |
+| `projects/<案件>.md` | 案件ごとの管理(納期・現状評価・リスク・計画) |
 | `log/YYYY-MM-DD.md` | 作業ログ・決定事項・次のアクション |
 
 ## 使い方
