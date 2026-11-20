@@ -10,6 +10,8 @@
 | **2027-02-01** | 宿泊税 SaaS | **宿泊税施行=稼働** | 開発中 | |
 | **2027-02 末** | facility-booking(大学病院) | **最終納品** | 見積中 | |
 | 2027-03 末(見込み) | 宿泊税 SaaS | 利用者の初回申告(2月分) | — | |
+| **2027-04** | SecuBase | 稼働目標(自社 iSSO はコンサルに依頼中) | 開発中 | `projects/secubase.md` |
+| 未定(提案中) | tsumiki(喜名保育園) | 稼働時期は提案中。ryus-apps へ統合する設計を別セッションで実施中 | 設計中 | `projects/tsumiki.md` |
 | 未定(要調整) | 鹿屋体育大学 教務システム | 本番移行(PHP 5.2 → 8.5) | 準備完了・日程未定 | `projects/kanoya.md` |
 | 未定 | otc-kk 見積システム | スクラッチ版の提案 | 開発中 | `projects/otc-kk.md` |
 | 未定 | 不動産:ライフの J-Rent 移行 | 移行実施 | 見積済み | `projects/fudosan.md` |
