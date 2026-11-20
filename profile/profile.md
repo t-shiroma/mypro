@@ -25,6 +25,7 @@
 | otc-kk(社名未確認) | 顧客 | 見積システム(kintone 版を運用中、スクラッチ版を提案中) | `projects/otc-kk.md` |
 | 大学病院(名称未確認) | 顧客 | facility-booking | |
 | 具志堅商店 | 顧客 | WordPress サイト | |
+| 喜名保育園 | 顧客 | 勤怠(現行 KinaKintai → tsumiki) | `projects/tsumiki.md` |
 
 ## 使用ツール・システム
 - GitHub(ryussystem 組織)、Claude Code(クラウド)で開発
