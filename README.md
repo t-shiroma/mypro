@@ -8,6 +8,7 @@
 | `CLAUDE.md` | Claude への指示(毎セッション読み込まれる) |
 | `profile/profile.md` | 所属・役割・関係者・使用ツール |
 | `work/duties.md` | 業務一覧(定常業務・プロジェクト業務の棚卸し) |
+| `work/repositories.md` | 担当リポジトリ一覧(概要・技術・状況) |
 | `work/hearing.md` | Claude からのヒアリング項目(未確認事項) |
 | `tasks/tasks.md` | 進行中・予定のタスク(優先度・期限・状態) |
 | `log/YYYY-MM-DD.md` | 作業ログ・決定事項・次のアクション |
