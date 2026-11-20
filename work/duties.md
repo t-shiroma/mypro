@@ -18,7 +18,7 @@
 | P9 | 具志堅商店 WordPress | gushiken-shoten.co.jp | 保守 | Git管理を導入済 | — | 週次ミラー |
 | P10 | RYU'S Apps 勤怠 | ryus-apps | 自社SaaS | **開発中**(フェーズ1。11/10 以降停止) | 未確認 | `projects/ryus-apps.md` |
 | P11 | WorkApp(社内業務アプリ)と製品サイト | work-app / webapp-product-site | 社内アプリ | **運用中**・継続開発(最も活発) | — | 製品サイトの料金・規約は仮 |
-| P12 | 公共施設予約 ashibi | ashibi | 自社製品/提案 | 団体別の環境構築 | 未確認 | 沖縄県スポーツ協会 |
+| P12 | 公共施設予約 ashibi | ashibi | 自社製品・**提案中** | 2団体に提案(お試しで継続の見込み) | 未確認 | 沖縄県スポーツ協会・沖縄県青年会館。`projects/ashibi.md` |
 | P13 | SecuBase(情報セキュリティ管理SaaS) | secubase | 自社SaaS | **開発中**(Phase 1。11/06 以降停止) | 未確認 | `projects/secubase.md` |
 | P14 | 保育園向け勤怠 tsumiki(喜名保育園) | tsumiki | 受託/自社 | 要件・プロトタイプ。**ryus-apps への統合を検討** | 未確認 | 変形労働時間制。`projects/tsumiki.md` |
 | P15 | Windows デスクトップ基盤検証 | ryus-desktop-template | 技術検証 | フェーズ4完了 | — | |
