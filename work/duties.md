@@ -11,7 +11,7 @@
 | P2 | 漁業振興基金 システム再構築 | blue-shield(旧: promotionFund、設計書: gyogyogyo-pj) | 受託 | 納品前の仕上げ | **2026-11 末 納品** | フルスクラッチ再構築。詳細は `projects/blue-shield.md` |
 | P3 | 鹿屋体育大学 教務システム(提供中)のセキュリティ対応 | DzkKnyKmWeb / DzkKnyKmDb | 保守 | 本番は PHP 8.5.12 で稼働中。PHP の脆弱性対応が随時発生 | 随時 | `projects/kanoya.md` |
 | P4 | 不動産システム(5社に提供)の保守・サーバー移行 | FudosanWeb / FudosanWebAPI / FudosanDB | 受託・保守 | 移行・運用 | 未確認 | CentOS 7→Ubuntu 26.04 |
-| P5 | ライフコーポレーションの J-Rent データ移行 | fudosan-iko-life | 受託 | 仕様・見積 | 未確認 | 工数見積作成済(11/16) |
+| P5 | ライフコーポレーションの J-Rent データ移行 | fudosan-iko-life | 受託 | **見積提出済み・回答待ち** | 未確認 | 工数見積(26.5 人日)提出済み(11/20 確認) |
 | P6 | otc-kk 見積システム:kintone 版を運用中、スクラッチ版を提案 | otc-kk-kintone / otc-kk-apps | 保守 + 提案 | 提案用に開発中(開発サーバーでデモ可) | 未確認 | `projects/otc-kk.md` |
 | P7 | 大学病院 施設予約 | facility-booking | 受託 | **見積の最終段階** | **2027-02 末 最終納品** | `projects/facility-booking.md` |
 | P8 | 店舗管理システム | new-accounting-system | 受託・保守 | バージョンアップ | 未確認 | |
