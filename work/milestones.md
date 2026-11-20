@@ -13,7 +13,7 @@
 | **2027-04** | SecuBase | 稼働目標(自社 iSSO はコンサルに依頼中) | 開発中 | `projects/secubase.md` |
 | 未定(提案中) | tsumiki(喜名保育園) | 稼働時期は提案中。ryus-apps へ統合する設計を別セッションで実施中 | 設計中 | `projects/tsumiki.md` |
 | 未定(提案中) | ashibi | 沖縄県スポーツ協会・沖縄県青年会館でお試し利用 → 本契約 | 提案中 | `projects/ashibi.md` |
-| 未定(要調整) | 鹿屋体育大学 教務システム | 本番移行(PHP 5.2 → 8.5) | 準備完了・日程未定 | `projects/kanoya.md` |
+| 随時 | 鹿屋体育大学 教務システム | PHP のセキュリティ更新(本番は 8.5.12 で稼働中) | 対応要否を確認中 | `projects/kanoya.md` |
 | 未定 | otc-kk 見積システム | スクラッチ版の提案 | 開発中 | `projects/otc-kk.md` |
 | 未定 | 不動産:ライフの J-Rent 移行 | 移行実施 | 見積済み | `projects/fudosan.md` |
 
