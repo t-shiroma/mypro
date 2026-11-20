@@ -7,7 +7,7 @@
 | 2026-11-20 | session_01GybB71qahbVKUroHchPPAM | ryus-apps | ログイン共有を親ドメイン Cookie から中央ログイン + アプリ専用 Cookie へ変更。PR は develop 向け | **完了**:[ryus-apps#32](https://github.com/ryussystem/ryus-apps/pull/32)。**マージ済み(2026-11-20)**。開発サーバーへ自動反映 → 開発サーバーの利用者は再ログインが必要 |
 | 2026-11-20 | session_01GybB731bFMr3th85EWGtT7 | ryus-apps | 通常の労働時間制の時間外判定の修正(A-1)+ 端数処理③の決定を文書に反映。PR は develop 向け | **マージ済み(2026-11-20、develop に 2755a9c を確認)** |
 | 2026-11-20 | session_01GybB6zYzYNVsf2ZnBGmufU | blue-shield | 納品前の仕上げ:A. R-2 修正・R-4 負荷試験・R-5 本番構成確認 / B. 全テスト再実施・報告書更新・納品物一覧 | **完了・PR 提出**:[blue-shield#31](https://github.com/ryussystem/blue-shield/pull/31)(A)→[#32](https://github.com/ryussystem/blue-shield/pull/32)(B。#31 の上に積み重ね)。head 確認済み。ユーザーへ通知済み |
-| 2026-11-20 | session_01GybB6yDspXn8UfMkZyJNJp | blue-shield | 設計書類・テスト文書の提出用 PDF 作成 + #32(誤って delivery-prep-a にマージ)を main へ反映する PR | **PR 提出**:[blue-shield#33](https://github.com/ryussystem/blue-shield/pull/33)(base main・head 4cfc543 確認済み)。PDF 48件。ユーザーへ通知済み |
+| 2026-11-20 | session_01GybB6yDspXn8UfMkZyJNJp | blue-shield | 設計書類・テスト文書の提出用 PDF 作成 + #32(誤って delivery-prep-a にマージ)を main へ反映する PR | #33 マージ済み。**追加依頼(11/20)**:ER概要図を09参照に置換、文書ID・版の付与、PDF再生成 → main 向け PR。期限 11/21 |
 
 ## 運用ルール
 - 依頼したセッションの成果物は PR。**マージは必ずユーザーが行う**(各リポジトリの規約で Claude はマージしない)。
