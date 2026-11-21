@@ -9,8 +9,8 @@
 | 2026-11-20 | session_01GybB6zYzYNVsf2ZnBGmufU | blue-shield | 納品前の仕上げ:A. R-2 修正・R-4 負荷試験・R-5 本番構成確認 / B. 全テスト再実施・報告書更新・納品物一覧 | **完了・PR 提出**:[blue-shield#31](https://github.com/ryussystem/blue-shield/pull/31)(A)→[#32](https://github.com/ryussystem/blue-shield/pull/32)(B。#31 の上に積み重ね)。head 確認済み。ユーザーへ通知済み |
 | 2026-11-20 | session_01GybB6yDspXn8UfMkZyJNJp | blue-shield | 設計書類・テスト文書の提出用 PDF 作成 + #32(誤って delivery-prep-a にマージ)を main へ反映する PR | **完了**:#33・#34 マージ済み(main 90de48b) |
 | 2026-11-21 | session_01GybB71taHTarTjhG2mDqfL | ryus-apps | ① 月単位のシフト作成の実装(PR-A〜E に分割、develop 向け。12/1 リリースには含めない) | PR-A 提出:[ryus-apps#36](https://github.com/ryussystem/ryus-apps/pull/36)(base develop・head 38fe269 確認済み)。PR-B の前にユーザー判断3点待ち。ユーザーへ通知済み |
-| 2026-11-21 | session_01GybB716uvJAYtYjJc1GgBS | ashibi | 分析機能(稼働率・個人/団体別・目的別・ヒートマップ・月次推移・抽選倍率・キャンセル率・CSV)。main 向け | 作業中 |
-| 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の追加(利用者区分別・設備別・目的別・ヒートマップ・月次推移・承認時間/却下率・リードタイム・CSV)+ 見積への工数反映。main 向け | 作業中 |
+| 2026-11-21 | session_01GybB716uvJAYtYjJc1GgBS | ashibi | 分析機能(稼働率・個人/団体別・目的別・ヒートマップ・月次推移・抽選倍率・キャンセル率・CSV)。main 向け | **PR #14 提出(head 680e34e)・マージ待ち** |
+| 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の追加(利用者区分別・設備別・目的別・ヒートマップ・月次推移・承認時間/却下率・リードタイム・CSV)+ 見積への工数反映。develop 向け(main は develop より19コミット遅れ) | **PR #10 提出(head 0439dce)・マージ待ち** |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
