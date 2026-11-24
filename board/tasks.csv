@@ -45,6 +45,6 @@ RA-06,RYU'S Apps 勤怠,① 月単位のシフト作成の実装(PR-A〜E、deve
 AS-05,ashibi(公共施設予約),分析機能の追加(稼働率・個人/団体別・ヒートマップ・抽選倍率など),完了,自分,,PR #14 マージ済み(2026-11-21)
 FB-04,施設予約(大学病院),分析機能の追加(利用者区分別・設備別・承認時間など)と見積への工数反映,完了,自分,,決定(11/24):7.0人日は今の見積に含める(140人日・PR #10 のまま)
 FB-05,施設予約(大学病院),分析機能の残り(操作マニュアルの章・機能一覧_確認用.xlsx・数値列の右寄せ),完了,自分,,PR #11 マージ済み(2026-11-21・develop)
-OS-DOM,宿泊税 SaaS,ryus-apps.jp 同居のための Cookie(__Host-)・CSRF 修正(okinawa-stay.ryus-apps.jp),進行中,Claude,,session_01GybB6z57jnyZCj8ErQZJNV(develop 向け)
-SB-DOM,SecuBase,ryus-apps.jp 同居のための Cookie(__Host-)修正,進行中,Claude,,session_01GybB6zfoK31VAKR169pWrF(main 向け)
+OS-DOM,宿泊税 SaaS,ryus-apps.jp 同居のための Cookie(__Host-)・CSRF 修正(okinawa-stay.ryus-apps.jp),確認待ち,自分,,PR #43 提出(develop・head c413e3f・CI 成功)。確認してマージ
+SB-DOM,SecuBase,ryus-apps.jp 同居のための Cookie(__Host-)修正,確認待ち,自分,,ローカルにコミット済み(4063259)。push・PR はユーザー本人の OK 待ち
 BS-DOM,blue-shield,blue-shield.ryus-apps.jp に置くか(顧客の了承・本番サーバーの担当)。置くなら Cookie 修正,未着手,自分,,納品(11/30)後に判断
