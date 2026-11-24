@@ -98,3 +98,4 @@
 ## 決定(2026-11-24)
 - 使うドメイン:ashibi.ryus-apps.jp(問題なし)、okinawa-stay.ryus-apps.jp(修正後に可)、blue-shield.ryus-apps.jp(技術的には修正後に可。顧客の了承が先・納品後に判断)
 - 宿泊税・SecuBase の修正を別セッションに依頼
+- 2026-11-24:宿泊税 #43(develop)・SecuBase #43(main)マージ → ryus-apps / ashibi / 宿泊税 / SecuBase の4製品とも同居の条件を満たした
