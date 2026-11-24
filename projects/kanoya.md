@@ -79,3 +79,4 @@ Windows Server 2019 / Apache 2.4 + **mod_php(php8apache2_4.dll、Thread Safe 版
 - 2026-11-24:暫定対策(php.ini に session.upload_progress.enabled=0 / zend.exception_ignore_args=1、DzkKnyKmApache 再起動)完了
 - 2026-11-26 17:00:PHP 8.5.13 への更新を予定
 - 動作確認は Oracle XE を使う(前回の PHP 8 移行時と同じ。ユーザー情報 2026-11-24)
+- 注意(PR #5 より):本番の `Apache2.4` は無効化済みの旧 Apache。更新作業中は「Apache監視（新）」「掲示板メール送信（新）」のタスクを無効化する(監視タスクが勝手にサービスを起動するため)
