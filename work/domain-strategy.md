@@ -94,3 +94,7 @@
 | SecuBase | CSRF は Origin 完全一致+Sec-Fetch-Site で厳格。Cookie `sb_session` は `__Host-` でない | 未対応(小さな修正) |
 | blue-shield | 対象外(振興基金向けの受託システム。自社製品ではない) | — |
 - 未決定:ashibi のサブドメインの形、宿泊税 SaaS の名前(stay.ryus-apps.jp は仮)、DNS の登録
+
+## 決定(2026-11-24)
+- 使うドメイン:ashibi.ryus-apps.jp(問題なし)、okinawa-stay.ryus-apps.jp(修正後に可)、blue-shield.ryus-apps.jp(技術的には修正後に可。顧客の了承が先・納品後に判断)
+- 宿泊税・SecuBase の修正を別セッションに依頼

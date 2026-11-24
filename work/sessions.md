@@ -12,6 +12,8 @@
 | 2026-11-21 | session_01GybB716uvJAYtYjJc1GgBS | ashibi | 分析機能(稼働率・個人/団体別・目的別・ヒートマップ・月次推移・抽選倍率・キャンセル率・CSV)。main 向け | **#14 マージ済み(2026-11-21、main で確認)** |
 | 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の追加(利用者区分別・設備別・目的別・ヒートマップ・月次推移・承認時間/却下率・リードタイム・CSV)+ 見積への工数反映。develop 向け(main は develop より19コミット遅れ) | **#10 マージ済み(2026-11-21、develop で確認)** |
 | 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の積み残し(マニュアルの章・機能一覧xlsx・数値列の右寄せ)。develop 向け | **#11 マージ済み(2026-11-21、develop で確認)** |
+| 2026-11-24 | session_01GybB6z57jnyZCj8ErQZJNV | okinawa-stay-manager-v2 | ryus-apps.jp 同居のための Cookie(__Host-)・CSRF(Origin なしを拒否)修正。develop 向け | 作業中 |
+| 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | ryus-apps.jp 同居のための Cookie(__Host-)修正。main 向け | 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
