@@ -70,7 +70,7 @@
 | 勤怠 | kintai.ryus-apps.jp |
 | ashibi | okinawa-sports.ashibi.ryus-apps.jp / okiseikan.ashibi.ryus-apps.jp(または ashibi.ryus-apps.jp/団体名) |
 | 宿泊税 SaaS | stay.ryus-apps.jp(仮) |
-| SecuBase | secubase.ryus-apps.jp |
+| SecuBase | secubase.ryus-apps.jp(確定 11/24) |
 
 ### 比較
 | | 製品ごとのドメイン | ryus-apps.jp にまとめる |
@@ -99,3 +99,4 @@
 - 使うドメイン:ashibi.ryus-apps.jp(問題なし)、okinawa-stay.ryus-apps.jp(修正後に可)、blue-shield.ryus-apps.jp(技術的には修正後に可。顧客の了承が先・納品後に判断)
 - 宿泊税・SecuBase の修正を別セッションに依頼
 - 2026-11-24:宿泊税 #43(develop)・SecuBase #43(main)マージ → ryus-apps / ashibi / 宿泊税 / SecuBase の4製品とも同居の条件を満たした
+- 2026-11-24 決定:SecuBase の本番ドメインは secubase.ryus-apps.jp(確定)
