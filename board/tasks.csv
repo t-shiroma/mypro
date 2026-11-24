@@ -49,3 +49,4 @@ OS-DOM,宿泊税 SaaS,ryus-apps.jp 同居のための Cookie(__Host-)・CSRF 修
 SB-DOM,SecuBase,ryus-apps.jp 同居のための Cookie(__Host-)修正,完了,自分,,PR #43 マージ済み(main・11/24)。公開済みのプライバシーポリシーがあれば Cookie 名を更新
 BS-DOM,blue-shield,blue-shield.ryus-apps.jp に置くか(顧客の了承・本番サーバーの担当)。置くなら Cookie 修正,未着手,自分,,納品(11/30)後に判断
 WA-PAY,work-app(社内),給与連携の内訳ポップアップ(日ごとの法定内・法定外・深夜・休日・週40h超など),完了,自分,,PR #196 マージ済み(main ec5ce78・11/24)。DB変更なし
+SB-OPS,SecuBase,運営者向けのテナント管理画面(運営者認証+TOTP・一覧・開設・停止/再開・管理者の再設定・監査ログ。中身は見せない),進行中,Claude,,session_01GybB72sHRvJNhAKtXxtEQz(main 向け・PR 分割)
