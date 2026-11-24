@@ -74,3 +74,7 @@ Windows Server 2019 / Apache 2.4 + **mod_php(php8apache2_4.dll、Thread Safe 版
    - 検証用サーバーで先に 8.5.13 を確認 → 本番は利用者の少ない時間帯に実施。
 3. 大学向けの報告・提案書:https://claude.ai/artifact/GKpyFeAbAqzXC8Ah8k32nY(2026-11-20 作成・**送付済み**。実施可否と日程の回答待ち)
 4. 暫定対策の php.ini 変更は、8.5.13 適用後も残す(リポジトリの `docs/windows/prod/php.ini` にも反映する)。
+
+## 実施記録
+- 2026-11-24:暫定対策(php.ini に session.upload_progress.enabled=0 / zend.exception_ignore_args=1、DzkKnyKmApache 再起動)完了
+- 2026-11-26 17:00:PHP 8.5.13 への更新を予定
