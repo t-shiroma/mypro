@@ -15,6 +15,7 @@
 | 2026-11-24 | session_01GybB6z57jnyZCj8ErQZJNV | okinawa-stay-manager-v2 | ryus-apps.jp 同居のための Cookie(__Host-)・CSRF(Origin なしを拒否)修正。develop 向け | **PR [#43](https://github.com/ryussystem/okinawa-stay-manager-v2/pull/43) マージ済み(2026-11-24、develop 76892e3)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | ryus-apps.jp 同居のための Cookie(__Host-)修正。main 向け | **PR [#43](https://github.com/ryussystem/secubase/pull/43) マージ済み(2026-11-24、main)** |
 | 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | 作業中 |
+| 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
