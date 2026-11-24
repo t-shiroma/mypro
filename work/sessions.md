@@ -14,6 +14,7 @@
 | 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の積み残し(マニュアルの章・機能一覧xlsx・数値列の右寄せ)。develop 向け | **#11 マージ済み(2026-11-21、develop で確認)** |
 | 2026-11-24 | session_01GybB6z57jnyZCj8ErQZJNV | okinawa-stay-manager-v2 | ryus-apps.jp 同居のための Cookie(__Host-)・CSRF(Origin なしを拒否)修正。develop 向け | **PR [#43](https://github.com/ryussystem/okinawa-stay-manager-v2/pull/43) マージ済み(2026-11-24、develop 76892e3)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | ryus-apps.jp 同居のための Cookie(__Host-)修正。main 向け | ローカルにコミット(4063259)。**push・PR はユーザー本人の OK 待ち** |
+| 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
