@@ -17,7 +17,7 @@
 | 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | **#196 マージ済み(2026-11-24、main ec5ce78)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | **#44 マージ済み(2026-11-24、main)** |
 | 2026-11-24 | session_01GybB72sHRvJNhAKtXxtEQz | secubase | 運営者向けのテナント管理画面(admin.secubase.ryus-apps.jp 推奨・社内IPのみ)。main 向け・PR 分割 | **PR [#45](https://github.com/ryussystem/secubase/pull/45)(API・head b2e7563)→ [#46](https://github.com/ryussystem/secubase/pull/46)(画面・head 4ce9268)提出、どちらも base main・マージ待ち** |
-| 2026-11-24 | session_01GybB6yeHzo4QBsJRccA9nX | DzkKnyKmWeb | PHP 8.5.13 の動作確認(構文・PHPUnit、8.5.12 と比較)、php.ini に暫定対策、手順書のサービス名 DzkKnyKmApache、11/26 当日のチェックリスト | 作業中 |
+| 2026-11-24 | session_01GybB6yeHzo4QBsJRccA9nX | DzkKnyKmWeb | PHP 8.5.13 の動作確認(構文・PHPUnit、8.5.12 と比較)、php.ini に暫定対策、手順書のサービス名 DzkKnyKmApache、11/26 当日のチェックリスト | ローカルコミット a85f2a9。単体(DBなし)45件・DB 4件は両版成功。DzkKnyKmDb 追加と push をユーザーが許可(11/24)→ Oracle XE で結合テスト実行中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
