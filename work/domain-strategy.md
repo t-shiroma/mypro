@@ -84,3 +84,13 @@
 ### 注意(一般の利用者向けの製品)
 - ashibi の利用者は「県民」、宿泊税 SaaS の利用者は「宿泊事業者」で、RYU'S Apps の利用者(企業の社員)とは層が違う。シリーズでまとめても、**画面・規約は製品ごとに分ける**のがよい。
 - 公共施設の予約は、団体のドメインで提供してほしいと言われる可能性がある(本契約時のオプションとして残す)。
+
+## 進捗(2026-11-24 確認)
+| 製品 | 条件(Cookie・CSRF)の対応 | 状態 |
+|---|---|---|
+| ryus-apps(勤怠) | 中央ログイン+アプリ専用 `__Host-` Cookie | 済(ryus-apps#32、11/20) |
+| ashibi | 同居のための Cookie・CSRF 対策 | 済(ashibi#10、11/20) |
+| 宿泊税 SaaS(OSM) | CSRF は Origin 完全一致(ただし Origin が無い要求は通す)。Cookie `osm_rt`(path=/api/auth)は `__Host-` でない | 未対応(小さな修正) |
+| SecuBase | CSRF は Origin 完全一致+Sec-Fetch-Site で厳格。Cookie `sb_session` は `__Host-` でない | 未対応(小さな修正) |
+| blue-shield | 対象外(振興基金向けの受託システム。自社製品ではない) | — |
+- 未決定:ashibi のサブドメインの形、宿泊税 SaaS の名前(stay.ryus-apps.jp は仮)、DNS の登録
