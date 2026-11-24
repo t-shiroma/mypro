@@ -16,7 +16,7 @@
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | ryus-apps.jp 同居のための Cookie(__Host-)修正。main 向け | **PR [#43](https://github.com/ryussystem/secubase/pull/43) マージ済み(2026-11-24、main)** |
 | 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | **#196 マージ済み(2026-11-24、main ec5ce78)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | **#44 マージ済み(2026-11-24、main)** |
-| 2026-11-24 | session_01GybB72sHRvJNhAKtXxtEQz | secubase | 運営者向けのテナント管理画面(admin.secubase.ryus-apps.jp 推奨・社内IPのみ)。main 向け・PR 分割 | 作業中 |
+| 2026-11-24 | session_01GybB72sHRvJNhAKtXxtEQz | secubase | 運営者向けのテナント管理画面(admin.secubase.ryus-apps.jp 推奨・社内IPのみ)。main 向け・PR 分割 | 実装済み(PR-1 API b2e7563・PR-2 画面 55dcebb)。**push・PR はユーザー本人の OK 待ち** |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
