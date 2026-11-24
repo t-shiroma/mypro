@@ -14,8 +14,8 @@
 | 2026-11-21 | session_01GybB72jb4z62Uzg1yq9NnX | facility-booking | 分析機能の積み残し(マニュアルの章・機能一覧xlsx・数値列の右寄せ)。develop 向け | **#11 マージ済み(2026-11-21、develop で確認)** |
 | 2026-11-24 | session_01GybB6z57jnyZCj8ErQZJNV | okinawa-stay-manager-v2 | ryus-apps.jp 同居のための Cookie(__Host-)・CSRF(Origin なしを拒否)修正。develop 向け | **PR [#43](https://github.com/ryussystem/okinawa-stay-manager-v2/pull/43) マージ済み(2026-11-24、develop 76892e3)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | ryus-apps.jp 同居のための Cookie(__Host-)修正。main 向け | **PR [#43](https://github.com/ryussystem/secubase/pull/43) マージ済み(2026-11-24、main)** |
-| 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | 作業中 |
-| 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | 作業中 |
+| 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | **#196 マージ済み(2026-11-24、main ec5ce78)** |
+| 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | **PR [#44](https://github.com/ryussystem/secubase/pull/44) 提出(head 0fc46b3 確認)・マージ待ち** |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
@@ -24,3 +24,5 @@
 - **PR が出たら PM セッションがユーザーに知らせる → ユーザーが確認してマージ**(2026-11-20 ユーザー指示)。完了の通知は来ないことがあるため、PM セッションが 30 分ごとに確認する(send_later で予約)。
 - 積み重ねの PR は、前の PR のマージ後に**次の PR のマージ先が main か**を必ず確認・案内する(2026-11-20 blue-shield#32 が delivery-prep-a にマージされた教訓)。
 - PR を知らせる前に、`git ls-remote origin refs/pull/<番号>/head` で PR の head が最新コミットを指していることを確認する(2026-11-20 の #31 の教訓)。
+
+- 依頼後20分ほどで get_session を見て、push 前の本人 OK 待ち(BLOCKED)で止まっていればすぐユーザーに知らせる(2026-11-24)
