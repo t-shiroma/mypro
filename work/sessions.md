@@ -22,7 +22,7 @@
 | 2026-11-25 | session_01GybB71XLbWCLw17GMFHjhc | ashibi | 2団体の施設データをホームページから取得し一括登録用ファイルを作成、取れない項目の一覧。main 向け | PR [ashibi#15](https://github.com/ryussystem/ashibi/pull/15) **マージ済み(2026-11-25、main)** |
 | 2026-11-25 | session_01GybB6yQoPvsTNu38sGgNL8 | secubase | 情報資産の CIA 評価・要対応の印・リスク対応計画の下書き(PR1、汎用の計算列と条件)。main 向け | **#47 マージ済み(2026-11-25)** |
 | 2026-11-25 | session_01GybB6yASgsWe5GpfrzcaiL | ashibi | 部屋の組み合わせの同時貸出を防ぐ機能(汎用・スポ協の AB⇔A・B を登録)。main 向け | **#16 マージ済み(2026-11-25)** |
-| 2026-11-25 | session_01GybB721KbM8kcbSe2fb5FV | blue-shield | 確認依頼書の回答(仕様判断17項目)の分類・工数・回答案(実装は判断後)。main 向け | 計画 PR [#35](https://github.com/ryussystem/blue-shield/pull/35)(head 39e1d11)。実装中(9本):#35 計画/#36 金額(72f8b98)/#37 帳票(11f8c1e)/#38 データ更新(06a0e15・0006)/#39 漁法(02a8405・0007・#38の後)/#40 提出日・船名(49d9c39)/#41 CSVボタン(03bbba4)。順にマージで衝突なし(PM確認) |
+| 2026-11-25 | session_01GybB721KbM8kcbSe2fb5FV | blue-shield | 確認依頼書の回答(仕様判断17項目)の分類・工数・回答案(実装は判断後)。main 向け | 計画 PR [#35](https://github.com/ryussystem/blue-shield/pull/35)(head 39e1d11)。実装中(9本):#35 計画/#36 金額(72f8b98)/#37 帳票(11f8c1e)/#38 データ更新(06a0e15・0006)/#39 漁法(02a8405・0007・#38の後)/#40 提出日・船名(49d9c39)/#41 CSVボタン(03bbba4)/#42 2段表示(f58d40e)。順にマージで衝突なし(PM確認) |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
