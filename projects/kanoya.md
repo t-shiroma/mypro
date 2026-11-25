@@ -81,3 +81,4 @@ Windows Server 2019 / Apache 2.4 + **mod_php(php8apache2_4.dll、Thread Safe 版
 - 動作確認は Oracle XE を使う(前回の PHP 8 移行時と同じ。ユーザー情報 2026-11-24)
 - 注意(PR #5 より):本番の `Apache2.4` は無効化済みの旧 Apache。更新作業中は「Apache監視（新）」「掲示板メール送信（新）」のタスクを無効化する(監視タスクが勝手にサービスを起動するため)
 - 2026-11-24 Linux + Oracle XE(JA16SJISTILDE)で PHP 8.5.12 と 8.5.13 を比較:単体54件すべて成功・結合43シナリオ(264 OK・既知不具合6・NG0)・PHP エラーログも一致。未確認は Windows TS/mod_php/oci8 DLL、Oracle 12c 接続、LDAP 認証 → 11/25 検証サーバー(V-01〜V-06)
+- ログの場所:検証サーバーは C:\DzkKnyKm\logs、本番は D:\DzkKnyKm\logs(ユーザー確認 2026-11-25。手順書の記載は正しい)
