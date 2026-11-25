@@ -21,6 +21,7 @@
 | 2026-11-25 | session_01GybB72CR6S7z6nqH3P8NWP | secubase | @eslint/js 10 対応(#38 の置き換え・4行修正)、dependabot.yml で TS7 を除外・グループの重なり解消。main 向け | 作業中 |
 | 2026-11-25 | session_01GybB71XLbWCLw17GMFHjhc | ashibi | 2団体の施設データをホームページから取得し一括登録用ファイルを作成、取れない項目の一覧。main 向け | PR [ashibi#15](https://github.com/ryussystem/ashibi/pull/15) **マージ済み(2026-11-25、main)** |
 | 2026-11-25 | session_01GybB6yQoPvsTNu38sGgNL8 | secubase | 情報資産の CIA 評価・要対応の印・リスク対応計画の下書き(PR1、汎用の計算列と条件)。main 向け | 作業中 |
+| 2026-11-25 | session_01GybB6yASgsWe5GpfrzcaiL | ashibi | 部屋の組み合わせの同時貸出を防ぐ機能(汎用・スポ協の AB⇔A・B を登録)。main 向け | 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
