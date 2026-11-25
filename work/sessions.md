@@ -17,11 +17,11 @@
 | 2026-11-24 | session_01GybB6yW9MSds8CNpm6MpAK | work-app | 給与連携の内訳ポップアップ(日ごとの内訳・週40h超の週小計・月合計は一覧と一致)。main 向け | **#196 マージ済み(2026-11-24、main ec5ce78)** |
 | 2026-11-24 | session_01GybB6zfoK31VAKR169pWrF | secubase | 手順書・設定例のドメインを secubase.ryus-apps.jp に書き換え(文書のみ)。main 向け | **#44 マージ済み(2026-11-24、main)** |
 | 2026-11-24 | session_01GybB72sHRvJNhAKtXxtEQz | secubase | 運営者向けのテナント管理画面(admin.secubase.ryus-apps.jp 推奨・社内IPのみ)。main 向け・PR 分割 | **#45・#46 マージ済み(2026-11-25、main 316a04d)** |
-| 2026-11-24 | session_01GybB6yeHzo4QBsJRccA9nX | DzkKnyKmWeb | PHP 8.5.13 の動作確認(構文・PHPUnit、8.5.12 と比較)、php.ini に暫定対策、手順書のサービス名 DzkKnyKmApache、11/26 当日のチェックリスト | ローカルコミット a85f2a9。単体(DBなし)45件・DB 4件は両版成功。PR [DzkKnyKmWeb#5](https://github.com/ryussystem/DzkKnyKmWeb/pull/5) **マージ済み(2026-11-25、develop)**。追補 PR [DzkKnyKmWeb#6](https://github.com/ryussystem/DzkKnyKmWeb/pull/6)(PowerShell 対応・head 8852260)マージ待ち。Oracle XE(JA16SJISTILDE)で 8.5.12/8.5.13 とも単体54件・結合43シナリオ(264 OK・既知6・NG0)、結果一致 |
+| 2026-11-24 | session_01GybB6yeHzo4QBsJRccA9nX | DzkKnyKmWeb | PHP 8.5.13 の動作確認(構文・PHPUnit、8.5.12 と比較)、php.ini に暫定対策、手順書のサービス名 DzkKnyKmApache、11/26 当日のチェックリスト | ローカルコミット a85f2a9。単体(DBなし)45件・DB 4件は両版成功。PR [DzkKnyKmWeb#5](https://github.com/ryussystem/DzkKnyKmWeb/pull/5) **マージ済み(2026-11-25、develop)**。追補 PR [DzkKnyKmWeb#6](https://github.com/ryussystem/DzkKnyKmWeb/pull/6) **マージ済み(2026-11-25)**。Oracle XE(JA16SJISTILDE)で 8.5.12/8.5.13 とも単体54件・結合43シナリオ(264 OK・既知6・NG0)、結果一致 |
 | 2026-11-25 | session_01GybB72CR6S7z6nqH3P8NWP | secubase | @eslint/js 10 対応(#38 の置き換え・4行修正)、dependabot.yml で TS7 を除外・グループの重なり解消。main 向け | **#48 マージ済み(2026-11-25)** |
 | 2026-11-25 | session_01GybB71XLbWCLw17GMFHjhc | ashibi | 2団体の施設データをホームページから取得し一括登録用ファイルを作成、取れない項目の一覧。main 向け | PR [ashibi#15](https://github.com/ryussystem/ashibi/pull/15) **マージ済み(2026-11-25、main)** |
 | 2026-11-25 | session_01GybB6yQoPvsTNu38sGgNL8 | secubase | 情報資産の CIA 評価・要対応の印・リスク対応計画の下書き(PR1、汎用の計算列と条件)。main 向け | **#47 マージ済み(2026-11-25)** |
-| 2026-11-25 | session_01GybB6yASgsWe5GpfrzcaiL | ashibi | 部屋の組み合わせの同時貸出を防ぐ機能(汎用・スポ協の AB⇔A・B を登録)。main 向け | PR [ashibi#16](https://github.com/ryussystem/ashibi/pull/16)(head f33a664)マージ待ち。テスト 178 件 |
+| 2026-11-25 | session_01GybB6yASgsWe5GpfrzcaiL | ashibi | 部屋の組み合わせの同時貸出を防ぐ機能(汎用・スポ協の AB⇔A・B を登録)。main 向け | **#16 マージ済み(2026-11-25)** |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
