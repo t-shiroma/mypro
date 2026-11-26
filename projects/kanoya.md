@@ -83,3 +83,8 @@ Windows Server 2019 / Apache 2.4 + **mod_php(php8apache2_4.dll、Thread Safe 版
 - 2026-11-24 Linux + Oracle XE(JA16SJISTILDE)で PHP 8.5.12 と 8.5.13 を比較:単体54件すべて成功・結合43シナリオ(264 OK・既知不具合6・NG0)・PHP エラーログも一致。未確認は Windows TS/mod_php/oci8 DLL、Oracle 12c 接続、LDAP 認証 → 11/25 検証サーバー(V-01〜V-06)
 - ログの場所:検証サーバーは C:\DzkKnyKm\logs、本番は D:\DzkKnyKm\logs(ユーザー確認 2026-11-25。手順書の記載は正しい)
 - 2026-11-25:検証環境で PHP 8.5.13 の動作確認 OK(ユーザー)→ 11/26 17:00 本番更新
+- **2026-11-26:本番を PHP 8.5.13 に更新完了**(ユーザー。17:04 に current → php-8.5.13 へジャンクション切替)。
+  - 気づき:CLI の `php -m` に oci8 が出ないのは Instant Client の PATH がサービス(DzkKnyKmApache)にだけ設定されているため。PATH を足すと表示された。手順書 5-2・6-5 に「PATH を足してから確かめる」注記が必要
+  - 気づき:`php.exe -c php.ini` だけだと標準入力待ちで止まる(手順書のコマンドに -v / -m を明記する)
+  - 残:php_error.log の警告(index.php 83/270/278・DaoCode.php 907・DaoKeijiban.php 793〜809)と、掲示板の年度の SQL 直結(インジェクションの恐れ)の修正 PR を提案中。リリースは大学と日程調整
+  - 切り戻し用に C:\php\php-8.5.12 は当面残す
