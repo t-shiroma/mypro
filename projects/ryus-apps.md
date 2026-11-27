@@ -54,3 +54,4 @@
 ## 変形労働時間制(2026-11-27)
 - 現状:① 月次シフト作成は develop に済み(main 未反映)。変形は設計のみ(labor-systems-design.md)。喜名保育園は1年単位変形で ①〜③+⑤ 計108〜147人日
 - 決定(11/27 ユーザー):② から実装開始 → session_01GybB73XSbnbtbrYzXD7ec2
+- 2026-11-27 保育園向け提案書(スライド・下書き):https://claude.ai/artifact/X7fREwqFPnxMQd49EXUNrM 。12枚。料金・提供時期・提出日・連絡先は [ ] の空欄(社内で決める)
