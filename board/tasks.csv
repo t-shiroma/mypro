@@ -63,3 +63,4 @@ WA-DOC,work-app(社内),契約書作成機能(種類別 Word ひな形・顧客/
 WA-403,work-app(社内),営業アカウントで契約画面の要員追加が 403 になる不具合の修正,判断待ち,自分,,修正済み・push OK 待ち(claude/sales-employee-403)。既存の /api/tasks/assignees(社員番号・氏名・所属のみ)を候補に使用。API・DB 変更なし。全体テスト 2009 件合格
 WA-AI,work-app(社内),契約書ひな形の AI 点検・参考契約書からのひな形作成,進行中,自分,,11/27 ユーザーが session_01GybB73hueUPVwZ4bGYnNeq に直接依頼。マイグレーション 20261228010000。実 AI(API キーのある環境)での確認が必要。実装済み・push OK 待ち(claude/contract-template-ai)
 RA-08,RYU'S Apps 勤怠,③ 1年単位の変形労働時間制(55〜72人日)の実装,進行中,Claude,,session_01GybB73XSbnbtbrYzXD7ec2 でユーザーが直接進行。#44 業種デモ(ファストフード・保育園)・#45 PR-I(対象期間・年間カレンダー・日の区分・判定・36協定)・#46 PR-J(協定上限の検査・期間の確定/清算・割当の訂正・引継ぎ候補)develop マージ済み(11/27)。続きを作業中
+RA-09,RYU'S Apps 勤怠,シフト表の日ごとの時間帯表示(ガントチャート・時間帯ごとの人数),進行中,Claude,,11/27 依頼(session_01GybB73MYHrTipitykw934C・develop 向け)
