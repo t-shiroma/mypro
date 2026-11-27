@@ -26,6 +26,7 @@
 | 2026-11-26 | session_01GybB71yaAmSm3F91WsNNqY | work-app | チームのアンケート:履歴を前回・前々回の2回分に/1人ごとのミーティングのメモ(リーダーが書く・本人と上の上司は見るだけ・締め切り後も可)/メモの履歴2回分。main 向け | **#197 マージ済み**(#198 勤怠テスト修正もマージ) |
 | 2026-11-26 | session_01GybB72GXtngVFSVctUdPew | DzkKnyKmWeb | php_error.log の警告解消・掲示板の SQL 直結をバインドに・ログイン時の年度検証・本番手順書に PATH/-m/PowerShell の注記。develop 向け、8.5.13 + Oracle XE で回帰確認 | **#7 develop マージ済み**。DB 確認は未実施(検証サーバーで) |
 | 2026-11-27 | session_01GybB73XSbnbtbrYzXD7ec2 | ryus-apps | ② 制度の土台 + 1か月単位の変形労働時間制(labor-systems-design.md §3・§4、17〜22人日)。develop 向け・PR を分けて積む | PR-F = **#41 マージ済み**・PR-G 作業中 |
+| 2026-11-27 | session_01GybB73hueUPVwZ4bGYnNeq | work-app | 契約書作成機能:種類ごとの Word ひな形(差し込み項目・版管理)→ 顧客/契約データを差し込んで docx 出力、作成履歴の保存。main 向け | 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
