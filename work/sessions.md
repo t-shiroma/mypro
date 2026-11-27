@@ -25,7 +25,7 @@
 | 2026-11-25 | session_01GybB721KbM8kcbSe2fb5FV | blue-shield | 確認依頼書の回答(仕様判断17項目)の分類・工数・回答案(実装は判断後)。main 向け | 計画 PR [#35](https://github.com/ryussystem/blue-shield/pull/35)(head 39e1d11)。**#35〜#44 マージ済み(2026-11-25)**:#35 計画/#36 金額(72f8b98)/#37 帳票(11f8c1e)/#38 データ更新(06a0e15・0006)/#39 漁法(02a8405・0007・#38の後)/#40 提出日・船名(49d9c39)/#41 CSVボタン(03bbba4)/#42 2段表示(3ef0d0f)/#43 PDF出力(8712b8b・Dockerイメージ変更、ビルド未確認)/#44 エビデンス・文書(ff0e429・最後にマージ)。順にマージで衝突なし(PM確認) |
 | 2026-11-26 | session_01GybB71yaAmSm3F91WsNNqY | work-app | チームのアンケート:履歴を前回・前々回の2回分に/1人ごとのミーティングのメモ(リーダーが書く・本人と上の上司は見るだけ・締め切り後も可)/メモの履歴2回分。main 向け | **#197 マージ済み**(#198 勤怠テスト修正もマージ) |
 | 2026-11-26 | session_01GybB72GXtngVFSVctUdPew | DzkKnyKmWeb | php_error.log の警告解消・掲示板の SQL 直結をバインドに・ログイン時の年度検証・本番手順書に PATH/-m/PowerShell の注記。develop 向け、8.5.13 + Oracle XE で回帰確認 | **#7 develop マージ済み**。DB 確認は未実施(検証サーバーで) |
-| 2026-11-27 | session_01GybB73XSbnbtbrYzXD7ec2 | ryus-apps | ② 制度の土台 + 1か月単位の変形労働時間制(labor-systems-design.md §3・§4、17〜22人日)。develop 向け・PR を分けて積む | PR-F = **#41**(マージ待ち)・PR-G 作業中 |
+| 2026-11-27 | session_01GybB73XSbnbtbrYzXD7ec2 | ryus-apps | ② 制度の土台 + 1か月単位の変形労働時間制(labor-systems-design.md §3・§4、17〜22人日)。develop 向け・PR を分けて積む | PR-F = **#41 マージ済み**・PR-G 作業中 |
 
 ## 運用ルール
 - 依頼先セッションは、PM セッションからの「承認済み」を本人の承認とみなさない(push・PR 作成などの外部操作)。その場合はユーザーにセッションで直接 OK してもらう(2026-11-20)。
